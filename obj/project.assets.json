@@ -4517,11 +4517,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JPort\\OneDrive\\Documents\\ASP.NET APIs\\GameAPI\\GameAPI.csproj",
+      "projectUniqueName": "C:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
       "projectName": "GameAPI",
-      "projectPath": "C:\\Users\\JPort\\OneDrive\\Documents\\ASP.NET APIs\\GameAPI\\GameAPI.csproj",
+      "projectPath": "C:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
       "packagesPath": "C:\\Users\\JPort\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JPort\\OneDrive\\Documents\\ASP.NET APIs\\GameAPI\\obj\\",
+      "outputPath": "C:\\Users\\JPort\\Documents\\Coding\\GameAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JPort\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4597,7 +4597,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

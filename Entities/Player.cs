@@ -8,9 +8,9 @@ namespace GameAPI.Entities
 {
     public class Player
     {
-        public int PlayerId { get; set; }
+        public int PlayerID { get; set; }
         public string SystemUID { get; set; } = String.Empty;
         public string Username { get; set; } = String.Empty;
-        public string Password { get; set; } = String.Empty;
+        public string HashedPassword { get; set; } = String.Empty;
     }
 }

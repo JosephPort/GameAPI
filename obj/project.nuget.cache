@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yBrPtmZTonO0erUD+9lrNdO/aCqgFNGAeVwDW8a+TU2gZz0p7zSatx/aAwrUf9b9Up9m3wztHdScukGdzE6KAQ==",
+  "dgSpecHash": "6jS8/9Jr4Ii7vPNdXmnltz6kUEFwvsN6cMCIep0qE1oXEeQU08HIVBSoWGSt5RMTcIWKD1Bcegjcjdqub5jUWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\JPort\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.5\\microsoft.entityframeworkcore.design.8.0.5.nupkg.sha512",
     "C:\\Users\\JPort\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.5\\microsoft.entityframeworkcore.relational.8.0.5.nupkg.sha512",
     "C:\\Users\\JPort\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.5\\microsoft.entityframeworkcore.sqlserver.8.0.5.nupkg.sha512",
+    "C:\\Users\\JPort\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.5\\microsoft.entityframeworkcore.tools.8.0.5.nupkg.sha512",
     "C:\\Users\\JPort\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\JPort\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\JPort\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",

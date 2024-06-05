@@ -15,5 +15,6 @@ namespace GameAPI.Data
         }
 
         public DbSet<Player> Player { get; set; }
+        public DbSet<Leaderboard> Leaderboard { get; set; }
     }
 }

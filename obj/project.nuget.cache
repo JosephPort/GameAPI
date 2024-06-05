@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eyoq1g6WCy4iQGj8a03hpKBsy4WYMz0NZM1xOGvmP7HKljtY11psdVIF7AA0i0pT2KlWszacmbKy0VTZZ0Pn7A==",
+  "dgSpecHash": "6jS8/9Jr4Ii7vPNdXmnltz6kUEFwvsN6cMCIep0qE1oXEeQU08HIVBSoWGSt5RMTcIWKD1Bcegjcjdqub5jUWQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
+  "projectFilePath": "C:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JPort\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\JPort\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

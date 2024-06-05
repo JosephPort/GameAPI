@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GameAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240521055812_PlayerTable")]
-    partial class PlayerTable
+    [Migration("20240604231710_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace GameAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("GameAPI.Entities.Player", b =>
+            modelBuilder.Entity("GameAPI.Entities.Tables.Player", b =>
                 {
                     b.Property<int>("PlayerID")
                         .ValueGeneratedOnAdd()
@@ -32,15 +32,15 @@ namespace GameAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PlayerID"));
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("HashedPassword")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SystemUID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

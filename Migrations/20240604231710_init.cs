@@ -5,7 +5,7 @@
 namespace GameAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class PlayerTable : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,7 +17,7 @@ namespace GameAPI.Migrations
                     PlayerID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     SystemUID = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HashedPassword = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

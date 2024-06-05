@@ -4556,11 +4556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
+      "projectUniqueName": "c:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
       "projectName": "GameAPI",
-      "projectPath": "C:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
+      "projectPath": "c:\\Users\\JPort\\Documents\\Coding\\GameAPI\\GameAPI.csproj",
       "packagesPath": "C:\\Users\\JPort\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JPort\\Documents\\Coding\\GameAPI\\obj\\",
+      "outputPath": "c:\\Users\\JPort\\Documents\\Coding\\GameAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JPort\\AppData\\Roaming\\NuGet\\NuGet.Config",

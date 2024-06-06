@@ -21,11 +21,11 @@ namespace GameAPI.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(PlayerDTO player)
         {
-            // Finds if email exists since it needs to be unique
-            var dbPlayer = await _context.Player.FirstOrDefaultAsync(p => p.Email == player.Email);
+            // Finds if email/name exists since it needs to be unique
+            var dbPlayer = await _context.Player.FirstOrDefaultAsync(p => p.Email == player.Email || p.PlayerName == player.PlayerName);
 
             if (dbPlayer is not null){
-                return BadRequest("Email already exists");
+                return BadRequest("Email or username already in use");
             }
 
             // TODO: Add salt to password
@@ -37,6 +37,7 @@ namespace GameAPI.Controllers
                 SystemUID = player.SystemUID,
                 Email = player.Email,
                 HashedPassword = hashedPassword,
+                PlayerName = player.PlayerName
             };
 
             _context.Player.Add(playerToAdd);

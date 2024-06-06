@@ -44,7 +44,6 @@ namespace GameAPI.Controllers
                 return BadRequest("Player not found");
             }
 
-
             return Ok("save");
         }
     }

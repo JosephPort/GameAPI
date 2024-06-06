@@ -3,7 +3,6 @@ namespace GameAPI.Entities.Tables
     public class GameSave
     {
         public int GameSaveID { get; set; }
-        public string PlayerName { get; set; } = string.Empty;
         public int CashEarned { get; set; }
         public int CashSpent { get; set; }
         public int GoldEarned { get; set; }

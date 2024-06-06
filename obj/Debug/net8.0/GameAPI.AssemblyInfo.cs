@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5658bc77ab5a68912596d41410869e7c179a255")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf3c8039e70afc8d8f2c2c6e4bee1a8b8ea537a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

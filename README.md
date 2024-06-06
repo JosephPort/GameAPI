@@ -6,7 +6,7 @@ If you do not have SQL Server Management Studio or SQL Server downloaded, they c
 - Microsoft SQL Server: https://www.microsoft.com/en-us/sql-server/sql-server-downloads
 
 ### 2. Connecting the API to SQL Server
-SQL Server's default name is set to SQLEXPRESS, if your server name is different then you will need to change it to that name in app.settings.
+SQL Server's default name is set to SQLEXPRESS if using the express version, if your server name is different then you will need to change it to that name in app.settings
 - Open the Command Line Interface and copy and paste the following into the CLI: \
 `dotnet ef database update`
 - To add a new migration you can use the following in the Command Line Interface: \

@@ -37,7 +37,6 @@ namespace GameAPI.Controllers
                 SystemUID = player.SystemUID,
                 Email = player.Email,
                 HashedPassword = hashedPassword,
-                SaveJSONString = player.SaveJSONString
             };
 
             _context.Player.Add(playerToAdd);

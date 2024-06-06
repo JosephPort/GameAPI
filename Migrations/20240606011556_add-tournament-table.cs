@@ -10,21 +10,28 @@ namespace GameAPI.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropColumn(
+                name: "SaveJSONString",
+                table: "Player");
+
             migrationBuilder.CreateTable(
-                name: "Leaderboard",
+                name: "GameSave",
                 columns: table => new
                 {
-                    LeaderboardID = table.Column<int>(type: "int", nullable: false)
+                    GameSaveID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Class = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Time = table.Column<float>(type: "real", nullable: false),
+                    PlayerName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CashEarned = table.Column<int>(type: "int", nullable: false),
+                    CashSpent = table.Column<int>(type: "int", nullable: false),
+                    GoldEarned = table.Column<int>(type: "int", nullable: false),
+                    GoldSpent = table.Column<int>(type: "int", nullable: false),
                     PlayerID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Leaderboard", x => x.LeaderboardID);
+                    table.PrimaryKey("PK_GameSave", x => x.GameSaveID);
                     table.ForeignKey(
-                        name: "FK_Leaderboard_Player_PlayerID",
+                        name: "FK_GameSave_Player_PlayerID",
                         column: x => x.PlayerID,
                         principalTable: "Player",
                         principalColumn: "PlayerID",
@@ -32,8 +39,8 @@ namespace GameAPI.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Leaderboard_PlayerID",
-                table: "Leaderboard",
+                name: "IX_GameSave_PlayerID",
+                table: "GameSave",
                 column: "PlayerID");
         }
 
@@ -41,7 +48,14 @@ namespace GameAPI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Leaderboard");
+                name: "GameSave");
+
+            migrationBuilder.AddColumn<string>(
+                name: "SaveJSONString",
+                table: "Player",
+                type: "nvarchar(max)",
+                nullable: false,
+                defaultValue: "");
         }
     }
 }

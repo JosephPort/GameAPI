@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GameAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240605072438_add-tournament-table")]
+    [Migration("20240606011556_add-tournament-table")]
     partial class addtournamenttable
     {
         /// <inheritdoc />
@@ -23,6 +23,40 @@ namespace GameAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("GameAPI.Entities.Tables.GameSave", b =>
+                {
+                    b.Property<int>("GameSaveID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GameSaveID"));
+
+                    b.Property<int>("CashEarned")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CashSpent")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GoldEarned")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GoldSpent")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PlayerID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PlayerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("GameSaveID");
+
+                    b.HasIndex("PlayerID");
+
+                    b.ToTable("GameSave");
+                });
 
             modelBuilder.Entity("GameAPI.Entities.Tables.Leaderboard", b =>
                 {
@@ -65,10 +99,6 @@ namespace GameAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SaveJSONString")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("SystemUID")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -76,6 +106,17 @@ namespace GameAPI.Migrations
                     b.HasKey("PlayerID");
 
                     b.ToTable("Player");
+                });
+
+            modelBuilder.Entity("GameAPI.Entities.Tables.GameSave", b =>
+                {
+                    b.HasOne("GameAPI.Entities.Tables.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Player");
                 });
 
             modelBuilder.Entity("GameAPI.Entities.Tables.Leaderboard", b =>

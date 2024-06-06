@@ -26,7 +26,6 @@ namespace GameAPI.Controllers
             }
 
             // Updates the save string of the player to the client-side request
-            dbPlayer.SaveJSONString = cloudSave.SaveJSONString;
 
             _context.Player.Update(dbPlayer);
             await _context.SaveChangesAsync();
@@ -45,9 +44,8 @@ namespace GameAPI.Controllers
                 return BadRequest("Player not found");
             }
 
-            string save = dbPlayer.SaveJSONString;
 
-            return Ok(save);
+            return Ok("save");
         }
     }
 }
